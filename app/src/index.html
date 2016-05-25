@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0, shrink-to-fit=no">
+    <title>Первое задание по Angular.js</title>
+	<meta name="description" content="Задание по Angular.js" />
+	<meta name="keywords" content="Angular.js, task, colors" />
+	<link rel="stylesheet" href="/css/vendor.css">
+	<link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="wrapper">
+<div class="container app-content" ng-controller="MainCtrl">
+	<table class="table table-bordered table-condensed">
+	    <caption>Color table</caption>
+	    <thead>
+	        <tr>
+	            <th>#</th>
+	            <th>Color Name</th>
+	            <th>Color</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr ng-repeat="item in items.colorsArray">
+	            <th>{{$index}}</th>
+	            <td>{{ item.colorName }}</td>
+	            <td class="{{item.colorName}}" style="background-color: {{ item.hexValue }} ;">{{ item.hexValue }}</td>
+	        </tr>
+	    </tbody>
+	</table>
+</div>
+</div>
+	<script src="/js/vendor.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
