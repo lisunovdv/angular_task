@@ -1,0 +1,36 @@
+Using angular.js build a table with 2 columns: 1. Color name, 2. Color (use background).
+This project must contain at least 1 angular controller, service and directive. Add some pretty styles, using bootstrap. Add custom styles using LESS.
+Build it using gulp to minified files – vendor.js (all vendor libs like angular etc.), app.js (all your scripts), vendor.css (all vendor styles like bootstrap etc.), app.css (all your custom styles) and index.html file.
+Upload this project to your GIT accont.
+Data json:
+{
+    "colorsArray":[{
+            "colorName":"red",
+            "hexValue":"#f00"
+        },
+        {
+            "colorName":"green",
+            "hexValue":"#0f0"
+        },
+        {
+            "colorName":"blue",
+            "hexValue":"#00f"
+        },
+        {
+            "colorName":"cyan",
+            "hexValue":"#0ff"
+        },
+        {
+            "colorName":"magenta",
+            "hexValue":"#f0f"
+        },
+        {
+            "colorName":"yellow",
+            "hexValue":"#ff0"
+        },
+        {
+            "colorName":"black",
+            "hexValue":"#000"
+        }
+    ]
+}
